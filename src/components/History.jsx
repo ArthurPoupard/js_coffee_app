@@ -9,7 +9,7 @@ export default function History() {
                 <h2>History</h2>
             </div>
             <p><i>Hover for more information</i></p>
-            <dive className="coffee-history">
+            <div className="coffee-history">
                 {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, utcIndex) => {
                     
                     // Get various info to display on hover
@@ -28,7 +28,7 @@ export default function History() {
                         </div>
                     )
                 })}
-            </dive>
+            </div>
         </>
     )
 

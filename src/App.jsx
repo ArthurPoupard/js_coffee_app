@@ -7,7 +7,7 @@ import History from './components/History'
 
 function App() {
 
-  const isAuthenticated = true
+  const isAuthenticated = false
   const authenticatedContent = (
     <>
       <Stats/>
@@ -19,7 +19,7 @@ function App() {
     <>
       <Layout>
         <Hero/>
-        <CoffeeForm/>
+        <CoffeeForm isAuthenticated={isAuthenticated} />
         {/* If authenticated, show the content */}
         {isAuthenticated && (authenticatedContent)}
       </Layout>
